@@ -28,6 +28,9 @@ docs = [
 [project.scripts]
 ci-course = "ci_course.cli:main"
 
+[tool.setuptools.package-data]
+ci_course = ["data/*.csv"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
